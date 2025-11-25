@@ -30,7 +30,8 @@ The system is designed to be fintech-grade, with atomic operations and safe tran
 │
 ├── package.json
 ├── tsconfig.json
-└── .env‘‘‘
+└── .env
+```
 
 ### Technologies Used
 	•	Node.js with TypeScript
