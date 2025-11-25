@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",            // modern JS features
+    "module": "commonjs",          // Node.js module system
+    "strict": true,                // enable all strict type checks
+    "esModuleInterop": true,       // for importing modern JS libraries
+    "forceConsistentCasingInFileNames": true, 
+    "skipLibCheck": true, 
+    "outDir": "dist",            // compiled JS goes here (relative to backend/)
+    "rootDir": "src",            // TS source files live here (relative to backend/)
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true
+  },
+  "include": ["src/**/*"]
+}
