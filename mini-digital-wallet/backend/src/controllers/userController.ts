@@ -1,8 +1,17 @@
 import {Router, Request, Response}from 'express'
-import {createUser, getUserById} from '../services/userService.js';
+import {createUser, getUserById} from '../services/userService';
 import {User} from '../models/User.js';
 
 const router = Router();
+
+// router.get('/', async (_req: Request, res: Response) => {
+//     try {
+//         const users = await getAllUsers();
+//         res.status(200).json(users);
+//     } catch (error) {
+//         res.status(500).json({error: 'Failed to fetch users'});
+//     }
+// });
 
 router.post('/', async (req: Request, res: Response) => {
     try {

@@ -1,21 +1,21 @@
-import express, {Response} from 'express';
+import express from 'express';
 import dotenv from 'dotenv';
-// import userRouter from './controllers/userRoutes.js';
-// import walletRouter from './controllers/walletRoutes.js';
-// import transactionRouter from './controllers/transactionRoutes.js';
+import userController from './controllers/userController';
+import walletController from './controllers/walletControllers';
+// import transactionRouter from './controllers/transactionRoutes';
 
 dotenv.config();
 
 const app = express();
 app.use(express.json());
 
-app.get('/', (res: Response) => {
-    res.send('Mini Digital Wallet API is running');
-});
+// app.get('/', (res: Response) => {
+//     res.send('Mini Digital Wallet API is running');
+// });
 
-// app.use('/users', userRouter);
-// app.use('/wallets', walletRouter);
-// app.use('/transactions', transactionRouter);
+app.use('/api/users', userController);
+app.use('/api/wallets', walletController);
+// app.use('/api/transactions', transactionRouter);
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
