@@ -5,7 +5,8 @@
 This project is a Node.js (TypeScript) backend for a fintech wallet system. It allows users to create wallets, credit and debit balances, and track transactions. The project uses PostgreSQL as the database and Docker for easy setup.
 
 The system is designed to be fintech-grade, with atomic operations and safe transaction handling. Multi-currency support is not included, and all balances are in NGN.
-``` backend/
+``` 
+backend/
 │
 ├── src/
 │   ├── controllers/
@@ -23,7 +24,7 @@ The system is designed to be fintech-grade, with atomic operations and safe tran
 │   │
 │   └── app.ts
 │
-├── backend/sql/
+├── sql/
 │   ├── user.sql
 │   ├── wallet.sql
 │   └── transaction.sql
